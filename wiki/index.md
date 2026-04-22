@@ -36,4 +36,47 @@
 - *(等待 Trae 录入第一篇对比...)*
 
 ---
+## 🗺️ 知识图谱 (Mermaid)
+
+<!-- GRAPH:START -->
+
+```mermaid
+graph TD
+  cat_concepts["Concepts"]
+  cat_models["Models"]
+  cat_papers["Papers"]
+  cat_other["Other"]
+  n_wiki_concepts_ai_programming_agents_md["AI编程智能体"]
+  cat_concepts --> n_wiki_concepts_ai_programming_agents_md
+  n_wiki_concepts_arena_ai_md["Arena.AI"]
+  cat_concepts --> n_wiki_concepts_arena_ai_md
+  n_wiki_concepts_attention_residuals_md["Attention Residuals (AttnRes)"]
+  cat_concepts --> n_wiki_concepts_attention_residuals_md
+  n_wiki_concepts_seedvideobench_2_0_md["SeedVideoBench 2.0"]
+  cat_concepts --> n_wiki_concepts_seedvideobench_2_0_md
+  n_wiki_models_claude_opus_4_7_md["Claude Opus 4.7"]
+  cat_models --> n_wiki_models_claude_opus_4_7_md
+  n_wiki_models_kimi_linear_md["Kimi Linear"]
+  cat_models --> n_wiki_models_kimi_linear_md
+  n_wiki_models_seedance_2_0_md["Seedance 2.0"]
+  cat_models --> n_wiki_models_seedance_2_0_md
+  n_wiki_papers_attention_residuals_md["Attention Residuals: 深度维度的注意力机制改进"]
+  cat_papers --> n_wiki_papers_attention_residuals_md
+  n_wiki_papers_claude_opus_4_7_md["Claude Opus 4.7：编程与智能体能力的核升级"]
+  cat_papers --> n_wiki_papers_claude_opus_4_7_md
+  n_wiki_papers_seedance_2_0_md["Seedance 2.0：Advancing Video Generation for World Complexity"]
+  cat_papers --> n_wiki_papers_seedance_2_0_md
+  n_wiki_concepts_arena_ai_md --> n_wiki_concepts_seedvideobench_2_0_md
+  n_wiki_concepts_arena_ai_md --> n_wiki_models_seedance_2_0_md
+  n_wiki_concepts_seedvideobench_2_0_md --> n_wiki_concepts_arena_ai_md
+  n_wiki_concepts_seedvideobench_2_0_md --> n_wiki_models_seedance_2_0_md
+  n_wiki_models_seedance_2_0_md --> n_wiki_concepts_arena_ai_md
+  n_wiki_models_seedance_2_0_md --> n_wiki_concepts_seedvideobench_2_0_md
+  n_wiki_papers_seedance_2_0_md --> n_wiki_concepts_arena_ai_md
+  n_wiki_papers_seedance_2_0_md --> n_wiki_concepts_seedvideobench_2_0_md
+  n_wiki_papers_seedance_2_0_md --> n_wiki_models_seedance_2_0_md
+```
+
+<!-- GRAPH:END -->
+
 *上次由 Trae 自动更新于：2026-04-22*
