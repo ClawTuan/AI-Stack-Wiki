@@ -112,4 +112,4 @@ Trae 会：
 
 ## License
 
-默认不包含 License。若你希望鼓励转载传播且保留署名，常见做法是为“内容”采用 CC BY 4.0，并在仓库根目录添加 `LICENSE` 文件进行声明。
+本仓库的“内容”（例如 `wiki/` 下的 Markdown 笔记）采用 CC BY 4.0，详见仓库根目录的 [LICENSE](./LICENSE)。
