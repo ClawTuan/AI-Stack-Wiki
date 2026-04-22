@@ -10,11 +10,12 @@
 
 ### 1. 核心概念 (Concepts)
 *这里收录了 AI 领域的关键术语和理论机制。*
-- *(等待 Trae 录入第一篇概念...)*
+- [SeedVideoBench 2.0](./concepts/seedvideobench-2.0.md)
+- [Arena.AI](./concepts/arena-ai.md)
 
 ### 2. 模型解析 (Models)
 *各大模型的技术报告精读与架构拆解。*
-- *(等待 Trae 录入第一篇模型...)*
+- [Seedance 2.0](./models/seedance-2.0.md)
 
 ### 3. 框架与工具 (Frameworks)
 *训练、推理、部署、Agent 构建等生态工具。*
@@ -22,7 +23,7 @@
 
 ### 4. 论文研读 (Papers)
 *重要学术文献的核心观点提取。*
-- *(等待 Trae 录入第一篇论文...)*
+- [Seedance 2.0：Advancing Video Generation for World Complexity](./papers/seedance-2.0.md)
 
 ### 5. 对比与洞察 (Comparisons)
 *不同技术路线、模型的优劣势对比分析。*
