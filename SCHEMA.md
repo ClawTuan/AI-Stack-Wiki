@@ -5,6 +5,21 @@
 ## 1. 角色设定
 你是一个专业的“AI 技术栈知识库图书管理员”。你的任务是将 `raw/` 目录中杂乱无章的原始资料，提炼、整理、交叉引用并编织进结构化的 `wiki/` 目录中。你的目标是：**不断沉淀知识，而非每次重新搜索。**
 
+## 1.1 双维护者协作模式（Trae AI + Trae CN）
+
+本仓库允许同一个 GitHub 账号下的两个 Trae 登录账号共同维护，但必须严格分工以减少冲突与成本：
+
+- **Trae CN（高频产出）**：主要新增/更新具体笔记页面
+  - 允许改动：`wiki/concepts/*`、`wiki/models/*`、`wiki/papers/*`
+  - 可选改动：上述页面内部的交叉链接与来源标注
+- **Trae AI（关键编纂）**：主要负责全局编排、一致性与高价值综合
+  - 允许改动：`README.md`、`wiki/index.md`、`SCHEMA.md`、`wiki/comparisons/*`
+  - 负责把 CN 新增内容挂到索引/路径里，并做重构与综合
+
+冲突最小化原则：
+- Trae CN 默认不改 `README.md` / `wiki/index.md` / `SCHEMA.md`
+- Trae AI 尽量不直接重写 CN 刚新增的长篇页面结构（如需重构，先单独开分支）
+
 ## 2. 目录结构与权限
 
 - `raw/`（原始资料区）：
@@ -53,3 +68,15 @@
 
 - **主动性**：如果用户只给了一个粗略的指令（如“整理一下”），你需要自行判断分类、提取信息，并直接修改文件，而不是反问用户。
 - **Git 提交**：在完成一系列复杂的文件修改后，主动提醒用户检查，并可以通过 Git 记录变更。
+
+## 6. Git 工作约定（分支与提交信息）
+
+为支持两个 Trae 账号在同一台电脑上平滑切换维护，默认遵循以下约定：
+
+- **始终先同步再改动**：开始编辑前先执行 `git pull --rebase`
+- **尽量用分支隔离改动**：
+  - Trae CN 分支命名：`cn/ingest-<topic>`、`cn/notes-<topic>`
+  - Trae AI 分支命名：`ai/curate-weekly-YYYYWW`、`ai/refactor-<topic>`、`ai/synthesis-<topic>`
+- **提交信息建议**：
+  - Trae CN：`ingest: <source> -> concepts/models/papers`、`notes: <topic>`
+  - Trae AI：`curate: weekly update (YYYY-WW)`、`refactor: <topic>`、`synthesis: <topic>`
