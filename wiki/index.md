@@ -14,12 +14,14 @@
 - [Arena.AI](./concepts/arena-ai.md)
 - [Attention Residuals (AttnRes)](./concepts/attention-residuals.md)
 - [AI编程智能体](./concepts/ai-programming-agents.md)
+- [混合注意力架构（Hybrid Attention）](./concepts/hybrid-attention.md)
 
 ### 2. 模型解析 (Models)
 *各大模型的技术报告精读与架构拆解。*
 - [Seedance 2.0](./models/seedance-2.0.md)
 - [Kimi Linear](./models/kimi-linear.md)
 - [Claude Opus 4.7](./models/claude-opus-4-7.md)
+- [DeepSeek-V4](./models/deepseek-v4.md)
 
 ### 3. 框架与工具 (Frameworks)
 *训练、推理、部署、Agent 构建等生态工具。*
@@ -30,6 +32,7 @@
 - [Seedance 2.0：Advancing Video Generation for World Complexity](./papers/seedance-2.0.md)
 - [Attention Residuals：深度维度的注意力机制改进](./papers/attention-residuals.md)
 - [Claude Opus 4.7：编程与智能体能力的核升级](./papers/claude-opus-4-7.md)
+- [DeepSeek-V4：百万Token上下文的效率革命](./papers/deepseek-v4.md)
 
 ### 5. 对比与洞察 (Comparisons)
 *不同技术路线、模型的优劣势对比分析。*
